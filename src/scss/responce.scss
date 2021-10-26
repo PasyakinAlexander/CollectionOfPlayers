@@ -4,6 +4,11 @@
     {
         max-width: 1024px;
     }
+
+    .form{
+        width: 60%;
+        margin-top: 50px;
+    }
 }
 
 @media(max-width: 1024px)
@@ -11,6 +16,10 @@
     .container
     {
         max-width: 992px;
+    }
+
+    .form{
+        width: 70%;
     }
 }
 
@@ -28,6 +37,11 @@
     {
         max-width: 576px;
     }
+
+    .form{
+        width: 90%;
+        margin-top: 40px;
+    }
 }
 
 @media(max-width: 576px)
@@ -35,5 +49,16 @@
     .container
     {
         max-width: 320px;
+    }
+
+    .form{
+        width: 95%;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        form{
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }

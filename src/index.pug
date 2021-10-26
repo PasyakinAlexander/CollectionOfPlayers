@@ -9,11 +9,18 @@ html(lang="ru")
         title Document
         include pug/head.pug
     body
-        .container
-            h1 Hi from PUG! 
-            +InputRadio('name', 'test')
-            
-            +Modal('test', 'ModalTemplate')
-            button(modal="test") Modal Test
+        header 
+            img.logo(src="../assets/images/logo.png", alt="")
+        section.form
+            h2 Добро пожаловать
+            h3 Для начала игры, пожалуйста, расскажите о себе
+            form
+                input(type="text", placeholder="Ваше имя")
+                input(type="text", placeholder="Ваш телефон")
+                input(type="text", placeholder="Ваш e-mail")
+                input(type="text", placeholder="Ваша профессия")
+                input(type="text", placeholder="Ваша должность")
+                input(type="text", placeholder="Есть ли опыт игры в финансовые стратегии? Если да то какой опыт")
+                button отправить
 
         include pug/scripts.pug

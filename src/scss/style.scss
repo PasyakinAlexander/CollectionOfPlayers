@@ -1,8 +1,9 @@
 body
 {
     margin: 0;
-    color: #000;
-    background: #fff;
+    color: white;
+    background-image: url(../images/Background.png);
+    font-family: OpenSans;
 }
 
 body.lock
@@ -30,6 +31,71 @@ button, input, select
 button, a
 {
     cursor: pointer;
+}
+
+header{
+    background-image: url(../images/BackgroundHeader.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #231f20, $alpha: 0.9);
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-top: 100px;
+
+    h2{
+        font-size: 37px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    h3{
+        font-size: 19px;
+        font-weight: normal;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+        padding: 20px;
+
+        input{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            width: 100%;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        button{
+            background: linear-gradient(to right, #dcb96f, #f2d9a6, #dcb96f);
+            border: none;
+            padding: 10px 40px;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+    }
+}
+
+input, button{
+    font-family: OpenSans;
 }
 
 
